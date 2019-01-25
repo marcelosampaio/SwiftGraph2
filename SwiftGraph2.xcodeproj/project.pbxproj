@@ -12,6 +12,7 @@
 		2D31050021FB2BAF0085DD9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3104FE21FB2BAF0085DD9D /* Main.storyboard */; };
 		2D31050221FB2BB10085DD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D31050121FB2BB10085DD9D /* Assets.xcassets */; };
 		2D31050521FB2BB10085DD9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D31050321FB2BB10085DD9D /* LaunchScreen.storyboard */; };
+		943886D3A4148C6D8D93A122 /* Pods_SwiftGraph2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDB2FBF46F8EF36757E6D19 /* Pods_SwiftGraph2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2D31050121FB2BB10085DD9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D31050421FB2BB10085DD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D31050621FB2BB10085DD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CDB2FBF46F8EF36757E6D19 /* Pods_SwiftGraph2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftGraph2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F520910F5C90A16283E93C /* Pods-SwiftGraph2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGraph2.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftGraph2/Pods-SwiftGraph2.release.xcconfig"; sourceTree = "<group>"; };
+		F0DBF974D0888D881FAF280D /* Pods-SwiftGraph2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGraph2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftGraph2/Pods-SwiftGraph2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				943886D3A4148C6D8D93A122 /* Pods_SwiftGraph2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2D3104F921FB2BAE0085DD9D /* SwiftGraph2 */,
 				2D3104F821FB2BAE0085DD9D /* Products */,
+				483C0F6F3BDA584D8234129F /* Pods */,
+				745009AC5F83458D0B08F6CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = SwiftGraph2;
 			sourceTree = "<group>";
 		};
+		483C0F6F3BDA584D8234129F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0DBF974D0888D881FAF280D /* Pods-SwiftGraph2.debug.xcconfig */,
+				B1F520910F5C90A16283E93C /* Pods-SwiftGraph2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		745009AC5F83458D0B08F6CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CDB2FBF46F8EF36757E6D19 /* Pods_SwiftGraph2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D31050921FB2BB10085DD9D /* Build configuration list for PBXNativeTarget "SwiftGraph2" */;
 			buildPhases = (
+				3C1B7FB86C206963762F0ABC /* [CP] Check Pods Manifest.lock */,
 				2D3104F321FB2BAE0085DD9D /* Sources */,
 				2D3104F421FB2BAE0085DD9D /* Frameworks */,
 				2D3104F521FB2BAE0085DD9D /* Resources */,
+				1573CC715E7C4E6743D285F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1573CC715E7C4E6743D285F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftGraph2/Pods-SwiftGraph2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftGraph2/Pods-SwiftGraph2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C1B7FB86C206963762F0ABC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftGraph2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D3104F321FB2BAE0085DD9D /* Sources */ = {
@@ -280,11 +353,13 @@
 		};
 		2D31050A21FB2BB10085DD9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0DBF974D0888D881FAF280D /* Pods-SwiftGraph2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5NC5X2493;
 				INFOPLIST_FILE = SwiftGraph2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +373,13 @@
 		};
 		2D31050B21FB2BB10085DD9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F520910F5C90A16283E93C /* Pods-SwiftGraph2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5NC5X2493;
 				INFOPLIST_FILE = SwiftGraph2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
